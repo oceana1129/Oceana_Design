@@ -1,0 +1,24 @@
+This will be a portfolio designed for me specifically. It will highlight my current skills, projects, and design capabilities
+The main focus will be on my portfolio pieces and general process.
+Will also exemplify best practices, SEO, performance, and responsiveness
+ - wireframing, web design, html, css, and js
+The story it tells is one from artist to web developer
+
+Theme: 
+ - simple
+ - elegant
+ - clean (straight to the point)
+ - floral
+Fonts:
+ - cursive style: Parisienne (https://fonts.google.com/specimen/Parisienne?preview.text=Oceana&preview.text_type=custom&category=Handwriting)
+ - general text: Source Serif Pro (https://fonts.google.com/specimen/Source+Serif+Pro?preview.text=Oceana&preview.text_type=custom&category=Serif,Sans+Serif,Handwriting&query=source)
+ - Headers and buttons: Quicksand (https://fonts.google.com/specimen/Quicksand?preview.text=CONTACT&preview.text_type=custom&category=Sans+Serif)
+Colors:
+ - 'Black': #271428;
+ - 'Secondary Black': #3f1f40;
+ - 'Thistle': #ddc2d3;
+ - 'Purple': #954b76;
+ - 'Misty Rose': #ffe7df;
+Shapes:
+ - round
+ - Squiggles
