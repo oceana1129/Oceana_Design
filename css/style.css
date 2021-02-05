@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
+body, button {
   line-height: 1;
 }
 ol, ul {
@@ -73,8 +73,27 @@ a:link, a:visited{
   BASE COLORS & FONTS
   ========================================
 */
-html{
+html, button{
   font-size: 62.5%;
+  color: #271428;
+  font-family: 'Source Serif Pro', serif;
+}
+html *{
+  font-size: 3vh;
+}
+h1, .title{
+  font-family: 'Parisienne', cursive;
+  font-size: 12vh;
+}
+.insertWords{
+  letter-spacing: .1%;
+  display: flex;
+}
+section{
+  position: relative;
+}
+li{
+  line-height: 1.5em;
 }
 
 
@@ -83,32 +102,132 @@ html{
   BACKGROUNDS
   ========================================
 */
-
+html{
+  background: linear-gradient(white, rgba(255,231,223, 0.1));
+}
   /*
   ========================================
   SPECIFIC ITEMS
   ========================================
 */
-
+button{
+  padding: 1rem 2rem;
+  background: none;
+  border: solid 1px #271428;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.3%;
+  transition: 0.3s;
+}
+.placeHolder, .bluePlaceholder, .pinkPlaceholder{
+  background: grey;
+  width: 66%;
+  height: 20vh;
+}
+.bluePlaceholder{
+  background: coral;
+}
+.pinkPlaceholder{
+  background: pink;
+}
+.circle{
+  background:  rgba(255,231,223, 1);
+  height: 40%;
+  width: 40%;
+}
 /*
   ========================================
   MAIN LAYOUT
   ========================================
 */
-
-
+.centerMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+.flexBetween{
+  justify-content: space-between;
+}
+.smallPad{
+  padding: 2% 3%;
+}
+.intro{
+  height: 100vh;
+  padding-top: 10vh;
+}
 /*
   ========================================
   MINI LAYOUT
   ========================================
 */
-
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background:rgba(255,255, 255, 0.3)
+}
+.hundred{
+  width: 100%;
+}
+.rotate{
+  transform: rotate(270deg);
+  width: 50vh;
+  position: absolute;
+  left: -10vw;
+  top: 10vw;
+}
+.headerTitle{
+  position: absolute;
+  top: 30%;
+  right: 25%;
+}
+.mainImg{
+  height: 100%;
+  width: auto;
+  position: relative;
+  align-self: flex-start;
+  z-index: -1;
+}
+.mainImg *{
+  height: 100%;
+  transform: scaleX(-1) rotate(5deg);
+}
+.miniLink{
+  position: absolute;
+  bottom: 25%;
+  right:10vw;
+}
+.insertWords{
+  padding-left: 4rem;
+}
+.branchOne{
+  position: absolute;
+  right: 0;
+  bottom: -10vh;
+  width: 30%;
+}
+.branchOne img{
+  height: auto;
+  width: 100%;
+}
 /*
   ========================================
   INTERACTIVE
   ========================================
 */
-
+button:hover{
+  background: #271428;
+  color: white;
+  cursor: pointer;
+}
 /*
   ========================================
   MEDIA QUERIES

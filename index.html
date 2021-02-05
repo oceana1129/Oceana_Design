@@ -12,16 +12,17 @@
     <link rel="icon" href="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612457439/Oceana%20Designs/Oceana_Designs_Logo_XSmall_pwzsca.png"  type="image/icon type">
     <!-- Links to Other things -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@300;400&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <!-- Header -->
     <!-- Will stay fixed to the top and have a background opacity so it just layers over everything but isn't blocking the whole top page -->
-<header>
-    <nav>
-        <ul>
+<header class="smallPad centerMe">
+    <nav class="centerMe hundred">
+        <ul class="flexRow flexBetween centerMe hundred">
             <li>
                 <a href="">
                     Resume
@@ -49,28 +50,184 @@
 <!-- Has a section of the left hand side rotated 90deg, intro text, and a main image of a girl with flowers.
         On the side is links to codepen and github.
         The section will end with a plant branch reaching from the bottom -->
+<section class="centerMe intro">
+    <div class="rotate">
+        <span>
+            DESIGN & CODE
+        </span>
+    </div>
+    <div class="headerTitle">
+        <h1>
+            I'm
+            <div class="insertWords">
+                <i class="title">O</i>
+                <i class="title">c</i>
+                <i class="title">e</i>
+                <i class="title">a</i>
+                <i class="title">n</i>
+                <i class="title">a</i>
+            </div>
+        </h1>
+    </div>
+    <div class="mainImg centerMe">
+        <img src="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612471879/Oceana%20Designs/Flower_Girl_SigNone_Resize_oqwxec.png" alt="">
+    </div>
+    <div class="circle">
 
+    </div>
+    <div class="miniLink">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://github.com/oceana1129" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/mayu-dream-star" target="_blank">
+                        CodePen
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="branchOne"><img src="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612486714/Oceana%20Designs/Oceana_Design_Branch_1_Resize_rdzwgb.png" alt=""></div>
+</section> 
 
 <!-- Small about me section -->
 <!-- Will include an image on the left that will take up most of the screen. And some small text about me and a contact button selector -->
-
+<section>
+    <div class="">
+        <img src="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612493999/Oceana%20Designs/Oceana_Design_Computer_Resize_zzrmxc.png" alt="">
+    </div>
+    <div>
+        <p>
+            I'm a software developer who creates elegant and clean websites.
+        </p>
+    </div>
+</section>
 
 <!-- Portfolio Section-->
 <!-- Will start out with some text that talks about me and my portfolio section
         After this are images representing each portfolio piece. They will be stacked from left to right.
         Will include a link to the hosted website, a link discussing the problem and solution, and a link for its code on GitHub
         Throughout this secttion, visuallt there will be some flower petals scattered throughout. -->
-
+<section class="smallPad">
+    <div>
+        <p>
+            As a freelance dev and designer, I am always busy working on new projects and improving my craft.
+        </p>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3>Bob's Boba Shop</h3>
+            <span>Design, Development, Art</span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3>Spat</h3>
+            <span>Design, Development, Responsiveness</span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3>Drink Database</h3>
+            <span>API, Design, Development</span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3>Oceana Web Design</h3>
+            <span>Design, Development, Responsiveness</span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3>Sharikava</h3>
+            <span>Development</span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+    <div class="portfolioImgContainer">
+        <img src="" alt="" class="portfolioImg">
+            <h3></h3>
+            <span></span>
+            <a href="">
+                <button>
+                    GitHub
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    Live
+                </button>
+            </a>
+    </div>
+</section>
 
 <!-- Rotating Images Section-->
 <!-- Just a rotating carousel of some square images of logos, pictures, ect that I have made -->
-
+<section class="bottomCarousel">
+    <div class="carouselContainer">
+        <div class="carouselImgContainer bluePlaceholder"><img src="" alt="" class="carouselImg"></div>
+        <div class="carouselImgContainer pinkPlaceholder"><img src="" alt="" class="carouselImg"></div>
+        <div class="carouselImgContainer bluePlaceholder"><img src="" alt="" class="carouselImg"></div>
+        <div class="carouselImgContainer pinkPlaceholder"><img src="" alt="" class="carouselImg"></div>
+        <div class="carouselImgContainer bluePlaceholder"><img src="" alt="" class="carouselImg"></div>
+        <div class="carouselImgContainer pinkPlaceholder"><img src="" alt="" class="carouselImg"></div>
+    </div>
+</section>
 
 
 </main>
 
 <!-- Footer with links to stuff-->
-<footer>
+<footer class="smallPad">
     <div>
         <nav>
             <ul>
@@ -87,19 +244,6 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-    <footer class="whiteBg  centerMe">
-        
-    </footer>
     <script type="text/javascript" src="js/master.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 </body>
 </html>
