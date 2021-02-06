@@ -80,6 +80,7 @@ html, button{
 }
 html *{
   font-size: 3vh;
+  font-weight: 300;
 }
 h1, .title{
   font-family: 'Parisienne', cursive;
@@ -92,8 +93,14 @@ h1, .title{
 section{
   position: relative;
 }
-li{
+h3{
+  font-size: 6vh;
+}
+li, p, span, h3{
   line-height: 1.5em;
+}
+button{
+  margin: 1rem;
 }
 
 
@@ -135,6 +142,28 @@ button{
   height: 40%;
   width: 40%;
 }
+.lineHorizontal{
+  width: 20%;
+  height: 3px;
+  background: #271428;
+}
+.lineVertical{
+  width: 3px;
+  height: 20vh;
+  margin: 3rem 0;
+  background: #271428;
+}
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolioImgContainer{
+  height: 90vh;
+  width: 40vw;
+}
+.portfolioImg{
+  height: 80%;
+}
 /*
   ========================================
   MAIN LAYOUT
@@ -156,12 +185,24 @@ button{
 .flexBetween{
   justify-content: space-between;
 }
+.flexEnd{
+  display: flex;
+  align-items: flex-end;
+}
+.textCenter{
+  text-align: center;
+}
 .smallPad{
   padding: 2% 3%;
 }
-.intro{
+.intro, .about{
   height: 100vh;
+}
+.intro, .about{
   padding-top: 10vh;
+}
+.portfolioHalf.two{
+  margin-top: 30vh;
 }
 /*
   ========================================
@@ -211,12 +252,30 @@ header{
 .branchOne{
   position: absolute;
   right: 0;
-  bottom: -10vh;
+  bottom: -15vh;
   width: 30%;
 }
 .branchOne img{
   height: auto;
   width: 100%;
+}
+.aboutMain{
+  height: 80vh;
+}
+.computerImg{
+  width: 60vw;
+  align-self: flex-end;
+}
+.computerImg Img{
+  width: 100%;
+}
+.miniText{
+  position: absolute;
+  bottom: 30vh;
+  right: 7vw;
+}
+.padTopBotSmall{
+  padding: 2rem 0;
 }
 /*
   ========================================
