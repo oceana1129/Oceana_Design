@@ -24,12 +24,12 @@
     <nav class="centerMe hundred">
         <ul class="flexRow flexBetween centerMe hundred">
             <li>
-                <a href="">
+                <a href="" class="underlineHover">
                     Resume
                 </a>
             </li>
             <li class="textCenter">
-                <a href="">
+                <a href="#portfolio" class="underlineHover">
                     Projects
                 </a>
             </li>
@@ -56,17 +56,17 @@
             DESIGN & CODE
         </span>
     </div>
-    <div class="headerTitle">
+    <div class="headerTitle" id="header">
         <h1>
             I'm
             <div class="insertWords">
-                <div class="insertTitleOne insertTitle">
+                <div class="insertTitle">
                     <i class="title titleOne">Oceana,</i>
                 </div>
-                <div class="insertTitleTwo insertTitle">
+                <div class="insertTitle">
                     <i class="title titleTwo hidden">the<i class="space"></i>art<i class="space"></i>kid,</i>
                 </div>
-                <div class="insertTitleThree insertTitle">
+                <div class="insertTitle">
                     <i class="title titleThree hidden">a<i class="space"></i>developer.</i>
                    
                 </div>
@@ -74,11 +74,10 @@
             </div>
         </h1>
     </div>
-    <div class="mainImg centerMe">
+    <div class="mainImg centerMe" id="mainImg">
         <img src="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612471879/Oceana%20Designs/Flower_Girl_SigNone_Resize_oqwxec.png" alt="">
     </div>
-    <div class="circle">
-
+    <div class="circle" id="box">
     </div>
     <div class="miniLink">
         <nav>
@@ -104,10 +103,10 @@
 <section class="about">
     <div class="centerMe"><div class="lineHorizontal"></div></div>
     <div class="flexRow aboutMain ComputerImgContainer">
-        <div class="computerImg">
+        <div class="computerImg" id="computerImg">
             <img src="https://res.cloudinary.com/oceana-web-designs/image/upload/v1612493999/Oceana%20Designs/Oceana_Design_Computer_Resize_zzrmxc.png" alt="">
         </div>
-        <div class="miniText centerMe flexColumn">
+        <div class="miniText centerMe flexColumn" id="aboutText">
             <h2 class="flexSelfStart">From Artist to Developer</h2>
             <p class="flexSelfStart">
                 I make art, code, and websites. <br>
@@ -141,7 +140,7 @@
 
 </section>
 
-<section class="smallPad portfolio centerMe">
+<section class="smallPad portfolio centerMe" id="portfolio">
     
     <div class="portfolioHalf one">
         <div class="portfolioImgContainer flexColumn">
@@ -155,6 +154,11 @@
                     <a href="https://github.com/oceana1129/Salon-Landing-Page/tree/main" target="_blank">
                         <button>
                             GitHub
+                        </button>
+                    </a>
+                    <a href="https://ayeshabeautysalon.netlify.app/" target="_blank">
+                        <button>
+                            Live
                         </button>
                     </a>
                 </div>
@@ -284,20 +288,14 @@
 
 <!-- Footer with links to stuff-->
 <footer class="smallPad">
-    <div><h4 class="textCenter">Oceana</h4></div>
-    <div>
-        <nav>
-            <ul class="centerMe">
-                <li><a href=""><ion-icon name="document-sharp"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/oceana-g-7a1877154/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/oceana1129" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="mailto:oceana1129@gmail.com" target="_blank"><ion-icon name="mail-sharp"></ion-icon></a></li>
-            </ul>
-        </nav>
-    </div>
-    <div>
-        <img src="" alt="">
-    </div>
+    <nav>
+        <ul class="centerMe">
+            <li><a href=""><ion-icon name="document-sharp"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/oceana-g-7a1877154/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/oceana1129" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="mailto:oceana1129@gmail.com" target="_blank"><ion-icon name="mail-sharp"></ion-icon></a></li>
+        </ul>
+    </nav>
 </footer>
 
     <script type="text/javascript" src="js/master.js"></script>

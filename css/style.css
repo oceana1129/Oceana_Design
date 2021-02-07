@@ -99,6 +99,7 @@ h2{
 }
 h3{
   font-size: 6vh;
+  padding: 1rem 0;
 }
 h4{
   font-size: 5vh;
@@ -129,6 +130,9 @@ li, p, span, h3, h4{
 .space{
   padding: 0 1rem;
 }
+.insertTitle *{
+  padding: 1rem;
+}
 /*
   ========================================
   BACKGROUNDS
@@ -136,6 +140,7 @@ li, p, span, h3, h4{
 */
 html{
   background: linear-gradient(white, rgba(255,231,223, 0.1));
+  scroll-behavior: smooth;
 }
   /*
   ========================================
@@ -176,6 +181,7 @@ button{
   height: 90vh;
   width: auto;
   padding: 5vh;
+  margin-bottom: 5vh;
 }
 .portfolioImg{
   height: 80%;
@@ -253,7 +259,7 @@ header li{
 .headerTitle{
   position: absolute;
   top: 30%;
-  right: 15%;
+  right: 20%;
 }
 .mainImg{
   height: 100%;
@@ -277,7 +283,7 @@ header li{
 .branchOne{
   position: absolute;
   right: 0;
-  bottom: -15vh;
+  bottom: -25vh;
   width: 30%;
   z-index: -1;
 }
@@ -328,14 +334,18 @@ header li{
 html *::selection{
   background: #e5adca;
 }
-img{
+/* img{
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   pointer-events: none;
+} */
+.portfolioImgWrapper{
+  overflow: hidden;
 }
+
 button:hover{
   background: #271428;
   color: white;
@@ -363,10 +373,9 @@ button:hover{
 .hidden{
   display: none;
 }
-
 .insertWords{
-  width: 32vw;
-  animation: fade 4s steps(500) infinite;
+  width: 500px;
+  animation: fade 4s infinite;
 }
 @keyframes fade{
   0% {
@@ -388,7 +397,7 @@ button:hover{
 .title{
   width: 150%;
   overflow: hidden;
-  animation: typed 4s steps(500) infinite; 
+  animation: typed 4s infinite; 
 }
 @keyframes typed{ 
   from{ width: 0px;} 
