@@ -101,11 +101,10 @@ h3{
   font-size: 6vh;
   padding: 1rem 0;
 }
-h4{
+h4, ion-icon{
   font-size: 5vh;
 }
 ion-icon{
-  font-size: 5vh;
   margin: 0 1rem;
   transition: 0.3s;
 }
@@ -114,9 +113,10 @@ li header{
   font-size: 2.7vh;
 }
 button{
-  margin: 1rem;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.5vh;
-  letter-spacing: .1em;
+  letter-spacing: 0.3%;
+  text-transform: uppercase;
 }
 strong{
   font-weight: 500;
@@ -148,12 +148,10 @@ html{
   ========================================
 */
 button{
+  margin: 1rem;
   padding: 1rem 2rem;
   background: none;
   border: solid 1px #271428;
-  text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 0.3%;
   transition: 0.3s;
 }
 .circle{
@@ -234,11 +232,13 @@ button{
 }
 header{
   position: fixed;
-  width: 100%;
   z-index: 999;
   background:rgba(255,255, 255, 0.3)
 }
 .hundred{
+  width: 100%;
+}
+body{
   width: 100%;
 }
 /*
@@ -249,15 +249,16 @@ header{
 header li{
   flex: 1;
 }
+.absolute{
+  position: absolute;
+}
 .rotate{
   transform: rotate(270deg);
   width: 50vh;
-  position: absolute;
   left: -10vw;
   top: 10vw;
 }
 .headerTitle{
-  position: absolute;
   top: 30%;
   right: 20%;
 }
@@ -273,7 +274,6 @@ header li{
   transform: scaleX(-1) rotate(5deg);
 }
 .miniLink{
-  position: absolute;
   bottom: 25%;
   right:10vw;
 }
@@ -281,7 +281,6 @@ header li{
   padding-left: 4rem;
 }
 .branchOne{
-  position: absolute;
   right: 0;
   bottom: -25vh;
   width: 30%;
@@ -292,7 +291,6 @@ header li{
   width: 100%;
 }
 .branchTwo{
-  position: absolute;
   left: 0;
   bottom: 0vh;
   width: 40%;
@@ -302,7 +300,6 @@ header li{
   transform: scale(-1);
 }
 .flowerOne{
-  position: absolute;
   left: 0;
   top: -5vh;
   width: 30%;
@@ -319,12 +316,14 @@ header li{
 }
 .miniText{
   width: 30%;
-  position: absolute;
   bottom: 30vh;
   right: 7vw;
 }
 .customPadding{
   padding: 2rem 20%;
+}
+header button{
+  margin: 0;
 }
 /*
   ========================================
@@ -334,18 +333,14 @@ header li{
 html *::selection{
   background: #e5adca;
 }
-/* img{
+img{
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   pointer-events: none;
-} */
-.portfolioImgWrapper{
-  overflow: hidden;
 }
-
 button:hover{
   background: #271428;
   color: white;
@@ -402,9 +397,173 @@ button:hover{
 @keyframes typed{ 
   from{ width: 0px;} 
 } 
-
+main{
+  overflow: hidden;
+}
 /*
   ========================================
   MEDIA QUERIES
   ========================================
 */
+/* 19" Desktop ----------- */
+@media only screen 
+and (max-device-width : 1440px){
+  .headerTitle{
+    right: 10%;
+  }
+}
+/* Microsoft Surface Pro ----------- */
+@media only screen 
+and (max-device-width : 1440px) and (max-device-height : 1024px){
+  .portfolioHalf.two{
+    margin-top: 0;
+  }
+}
+/* Apple iPad Pro ----------- */
+@media only screen 
+and (max-device-width : 1366px) and (max-device-height : 1024px){
+  .insertWords{
+    width: 550px;
+  }
+  .headerTitle{
+    right:  5%;
+  }
+  .branchOne, .branchTwo, .flowerOne{
+    width: 40%;
+  }
+  .flowerOne{
+    top: -20vh;
+  }
+  .computerImg{
+    align-self: center;
+  }
+}
+/* Samsung Galaxy Tablet ----------- */
+@media only screen 
+and (max-device-width : 1280px) and (max-device-height : 800px){
+  .headerTitle{
+    right: 5%;
+  }
+  .branchOne, .branchTwo, .flowerOne{
+    width: 40%;
+  }
+  .flowerOne{
+    top: -20vh;
+  }
+  .computerImg{
+    align-self: center;
+  }
+  .portfolioHalf.two{
+    margin-top: 20vh;
+  }
+}
+/* 12" Notebook ----------- */
+@media only screen 
+and (max-device-width : 1024px){
+  .headerTitle{
+    right: -5%;
+  }
+  .branchOne, .branchTwo, .flowerOne{
+    width: 40%;
+  }
+  .flowerOne{
+    top: -20vh;
+  }
+  .computerImg{
+    align-self: center;
+  }
+  .portfolioHalf.two{
+    margin-top: 0;
+  }
+}
+/* Samsung Galaxy Tablet 7 & 10" Notebook ----------- */
+@media only screen 
+and (max-device-width : 1024px) and (max-device-height : 600px){
+  .headerTitle{
+    right: 0%;
+  }
+  .portfolioHalf.two{
+    margin-top: 20vh;
+  }
+}
+/* Kindle Fire HD 7" ----------- */
+@media only screen 
+and (max-device-width : 800px){
+  .headerTitle{
+    right: 0%;
+  }
+  .insertWords{
+    width: 400px;
+  }
+}
+/* Apple iPhone 6/7 ----------- */
+@media only screen 
+and (max-device-width : 425px){
+  /* the header section */
+  header li{
+    align-self: center;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .mobileBtn{
+    padding: 1rem 1.5rem;
+  }
+  .rotate{
+    left: -30vw;
+    top: 45vw;
+  }
+  .mainImg{
+    height: 70%;
+    align-self: center;
+  }
+  .intro{
+    flex-direction: column;
+  }
+  .circle{
+    height: 100%;
+  }
+  .headerTitle{
+    top: 70%;
+    left: 10%;
+  }
+  h1, .title{
+    font-size: 9vh;
+  }
+  .miniLink{
+      bottom: -3%;
+  }
+  .branchOne, .branchTwo, .flowerOne{
+    display: none;
+  }
+  /* the intro section */
+  .aboutMain{
+    flex-direction: column-reverse;
+  }
+  .computerImg{
+    width: 120%;
+  }
+  .miniText{
+    width: 100%;
+    right: 0;
+    top: -7%;
+    align-items: center;
+    text-align: center;
+  }
+  .customPadding{
+    padding: 0 5%;
+  }
+  .miniText .flexSelfStart{
+    align-self: center;
+    text-align: center;
+  }
+  /* portfolio section */
+  .firstLine{
+    margin-top: 10%;
+  }
+  .portfolio{
+    text-align: center;
+  }
+  .portfolioHalf.two{
+    margin-top: 0vh;
+  }
+}
