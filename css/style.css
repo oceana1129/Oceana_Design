@@ -391,7 +391,7 @@ textarea:focus, textarea:active, input:focus, input:active{
   display: none;
 }
 .insertWords{
-  width: 500px;
+  width: 550px;
   animation: fade 4s infinite;
 }
 @keyframes fade{
@@ -439,6 +439,9 @@ and (max-device-width : 1440px){
 and (max-device-width : 1440px) and (max-device-height : 1024px){
   .portfolioHalf.two{
     margin-top: 0;
+  }
+  .headerTitle{
+    right: 5%;
   }
 }
 /* Apple iPad Pro ----------- */
