@@ -232,7 +232,7 @@ input{
   padding-top: 10vh;
 }
 .contact{
-  padding-top: 10vh !important;
+  padding-top: 15vh;
   min-height: 100vh;
 }
 .portfolioHalf.two{
@@ -333,6 +333,16 @@ header button{
   bottom: 30vh;
   right: 7vw;
 }
+#load{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  z-index:9999;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .customPadding{
   padding: 2rem 20%;
 }
@@ -421,6 +431,16 @@ textarea:focus, textarea:active, input:focus, input:active{
 } 
 main{
   overflow: hidden;
+}
+.spin{
+  animation: spin 2s linear infinite;
+  transition-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+@keyframes spin {
+  to{
+      transform: rotate(360deg);
+  }
 }
 /*
   ========================================
