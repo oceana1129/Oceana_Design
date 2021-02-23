@@ -69,23 +69,23 @@ function moveMe(e) {
     }}
 
 //This will take care of the load spinner animation
-  document.onreadystatechange = function() { 
-    if (document.readyState === "complete") { 
-        document.querySelector("#load").style.visibility = "visible"; 
-    } else { 
-        setTimeout(function(){
-             },1500)
-        setTimeout(function(){
-        document.querySelector("#load").style.visibility = "hidden";  
-         },1500);
-    } 
-}; 
-const loader = document.getElementById("load").animate(
-    [
-      { opacity: '1'},
-      { opacity: '.7'},
-      { opacity: '0'},
-    ], {
-      duration: 1500,
-    }
-  );
+//   document.onreadystatechange = function() { 
+//     if (document.readyState === "complete") { 
+//         document.querySelector("#load").style.visibility = "visible"; 
+//     } else { 
+//         setTimeout(function(){
+//              },1500)
+//         setTimeout(function(){
+//         document.querySelector("#load").style.visibility = "hidden";  
+//          },1500);
+//     } 
+// }; 
+// const loader = document.getElementById("load").animate(
+//     [
+//       { opacity: '1'},
+//       { opacity: '.7'},
+//       { opacity: '0'},
+//     ], {
+//       duration: 1500,
+//     }
+//   );
